@@ -17,7 +17,7 @@ pipeline {
                 // Даём контейнеру время на запуск
                 sleep 5
                 // Проверяем endpoint
-                sh 'curl http://localhost:3000/travel'
+                sh 'curl --fail http://localhost:3000/travel'
             }
         }
     }
