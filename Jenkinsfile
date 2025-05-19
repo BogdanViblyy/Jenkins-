@@ -21,11 +21,5 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            // Очищаем ресурсы
-            sh 'docker stop travel-app-container || true'
-            sh 'docker rm travel-app-container || true'
-        }
-    }
+    
 }
