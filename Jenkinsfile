@@ -15,7 +15,7 @@ pipeline {
         stage('Test Endpoint') {
             steps {
                 // Даём контейнеру время на запуск
-                sleep 5
+                sleep 10
                 // Проверяем endpoint
                 sh 'curl --fail http://localhost:3000/travel'
             }
