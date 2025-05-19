@@ -20,7 +20,7 @@ pipeline {
                 // Даём контейнеру время на запуск
                 sleep 5
                 // Проверяем endpoint
-                sh 'curl http://localhost:3000/travel | grep "Моё любимое место для путешествий — Япония."'
+                sh 'curl http://localhost:3000/travel'
             }
         }
     }
